@@ -44,7 +44,7 @@ model Task {
   projectId Int
   project   Project @relation(fields: [projectId], references: [id])
 
-  assignedTo Int
+  http://localhost:5173/ Int
   user       User @relation(fields: [assignedTo], references: [id])
 
   dueDate DateTime?
